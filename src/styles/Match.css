@@ -1,0 +1,174 @@
+.match-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: #f5f5f5;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.match-container h1 {
+  color: #212121;
+  font-size: 32px;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 900px;
+  gap: 40px;
+  background: white;
+  padding: 32px;
+  border-radius: 0;
+  border: 1px solid #e0e0e0;
+}
+
+.score-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.score-team h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.score {
+  font-size: 64px;
+  font-weight: 300;
+  color: #212121;
+  line-height: 1;
+  min-width: 100px;
+  text-align: center;
+}
+
+.time-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.time {
+  font-size: 48px;
+  font-weight: 300;
+  color: #212121;
+  min-width: 120px;
+  text-align: center;
+}
+
+.game-status {
+  font-size: 12px;
+  color: #999;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.teams-container {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  max-width: 900px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.btn {
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary {
+  background: #2196f3;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1976d2;
+}
+
+.btn-primary:active {
+  background: #1565c0;
+}
+
+.winner-display {
+  text-align: center;
+  color: white;
+}
+
+.winner-display h2 {
+  font-size: 40px;
+  margin: 0 0 10px 0;
+  color: #212121;
+  font-weight: 500;
+}
+
+.winner-name {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+  color: #2196f3;
+}
+
+@media (max-width: 768px) {
+  .match-container {
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .match-container h1 {
+    font-size: 28px;
+  }
+
+  .scoreboard {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .score {
+    font-size: 48px;
+  }
+
+  .time {
+    font-size: 40px;
+  }
+
+  .teams-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
